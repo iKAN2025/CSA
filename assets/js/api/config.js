@@ -3,8 +3,8 @@ if (location.hostname === "localhost") {
         pythonURI = "http://localhost:8087";
 } else if (location.hostname === "127.0.0.1") {
         pythonURI = "http://127.0.0.1:8087";
-} else {
-        pythonURI =  "https://flask2025.nighthawkcodingsociety.com/";
+} else { //deployed site
+        pythonURI =  "http://127.0.0.1:8087"; //https://flask2025.nighthawkcodingsociety.com/ Doesn't work, CORS errors. Only nighthawkcodingsociety site is allowed to use this deployed site.
 }
 export var javaURI;
 if (location.hostname === "localhost") {
